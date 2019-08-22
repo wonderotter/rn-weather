@@ -8,7 +8,11 @@ Weather App을 만들면서 React Native 배우기 & 정리
 React Native를 위한 create react app 같은 것으로 간단하게 초기환경을 세팅해준다.
 
 ### React Native CLI vs Expo
-React Native CLI 방식은 native files들을 더 많이 컨트롤 하고 싶을때!   Expo는 모든 native files들을 숨기고(natvie files에 접근권이 없다) 모든 걸 관리.  큰 장점은 나의 휴대폰에서 앱을 테스트할 수 있다. 또한 React Native CLI 보다 더 다양한 API를 가지고 있고 building process도 처리해줌.
+React Native CLI 방식은 native files들을 더 많이 컨트롤 하고 싶을때!
+
+Expo는 모든 native files들을 숨기고(natvie files에 접근권이 없다) 모든 걸 관리. 
+
+큰 장점은 나의 휴대폰에서 앱을 테스트할 수 있다. 또한 React Native CLI 보다 더 다양한 API를 가지고 있고 building process도 처리해줌.
 
 ### Expo CLI Quickstart
 ```
@@ -30,7 +34,9 @@ npm start # expo start
 * 웹 앱: 모바일 웹과 네이티브 앱을 결합한 것으로 모바일 웹의 특징을 가지면서 네이티브 앱의 장점도 갖음
 
 ### How does React Native Work?
-Android, iOS 둘 다 javascript 엔진을 가지고 있기 때문에 javascript를 실행할 수 있다.  리액트 네이티브가 하는 일은 iOS 또는 Android의 네이티브 엔진에 메시지(자바스크립트를 이용한)를 보내기 위해서 자바스크립트를 이용하는 것.  연결을 이어주는 Bridge 같은 것이다.
+Android, iOS 둘 다 javascript 엔진을 가지고 있기 때문에 javascript를 실행할 수 있다.
+
+리액트 네이티브가 하는 일은 iOS 또는 Android의 네이티브 엔진에 메시지(자바스크립트를 이용한)를 보내기 위해서 자바스크립트를 이용하는 것.  연결을 이어주는 Bridge 같은 것이다.
 
 ```
 import React from 'react';
@@ -44,7 +50,11 @@ export default function App() {
   );
 }
 ```
-Text, View 같은 컴포넌트들이 javascript와 android나 ios의 Bridge  javascript인 컴포넌트를 사용하지만 이 컴포넌트 안에는 bridge가 있는 것  -> 누군가 작성해 놓은 Swift code나 Java code로 iphone이랑 android가 이 컴포넌트를 이해하게 하는 것이 React Native의 역할
+Text, View 같은 컴포넌트들이 javascript와 android나 ios의 Bridge
+
+javascript인 컴포넌트를 사용하지만 이 컴포넌트 안에는 bridge가 있는 것  
+
+-> 누군가 작성해 놓은 Swift code나 Java code로 iphone이랑 android가 이 컴포넌트를 이해하게 하는 것이 React Native의 역할
 
 ### Expo 특징
 - app.json : expo가 읽게 될 configuration 파일
