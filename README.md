@@ -8,7 +8,7 @@ Weather App을 만들면서 React Native 배우기 & 정리
 React Native를 위한 create react app 같은 것으로 간단하게 초기환경을 세팅해준다.
 
 ### React Native CLI vs Expo
-React Native CLI 방식은 native files들을 더 많이 컨트롤 하고 싶을때!  Expo는 모든 native files들을 숨기고(natvie files에 접근권이 없다) 모든 걸 관리.  큰 장점은 나의 휴대폰에서 앱을 테스트할 수 있다. 또한 React Native CLI 보다 더 다양한 API를 가지고 있고 building process도 처리해줌.
+React Native CLI 방식은 native files들을 더 많이 컨트롤 하고 싶을때!   Expo는 모든 native files들을 숨기고(natvie files에 접근권이 없다) 모든 걸 관리.  큰 장점은 나의 휴대폰에서 앱을 테스트할 수 있다. 또한 React Native CLI 보다 더 다양한 API를 가지고 있고 building process도 처리해줌.
 
 ### Expo CLI Quickstart
 ```
