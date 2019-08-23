@@ -2,6 +2,11 @@
 Weather App을 만들면서 React Native 배우기 & 정리
 
 강의 링크: https://youtu.be/VQ1dFDIT2wQ
+
+## ScreenShot
+
+![weather-app](https://user-images.githubusercontent.com/45552388/63621912-2e5baa80-c630-11e9-957c-a1ab5fe37a38.png)
+
 ***
 ## Introduction
 ### Expo란?
