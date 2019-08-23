@@ -1,7 +1,6 @@
 import React from 'react';
 import Loading from './Loading';
 import { Alert } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
 import * as Location from 'expo-location';
 import axios from 'axios';
 import Weather from './Weather';
@@ -49,7 +48,7 @@ export default class App extends React.Component {
     const { isLoading, temp, condition } = this.state;
     return (
       isLoading 
-      ? <LinearGradient colors={['#EDE574','#E1F5C4']} style={{flex: 1}}><Loading /></LinearGradient> 
+      ? <Loading />
       : <Weather temp= {Math.round(temp)} condition= {condition} />
     )
   }

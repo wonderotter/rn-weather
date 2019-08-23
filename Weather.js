@@ -7,64 +7,80 @@ import { LinearGradient } from 'expo-linear-gradient';
 const weatherOptions = {
     Tornado: {
         iconName:'weather-hurricane',
-        gradient: ['#5614B0', '#DBD65C']
+        gradient: ['#5614B0', '#DBD65C'],
+        subtitle: '외부 활동을 삼가세요!'
     },
     Thunderstorm: {
         iconName:'weather-lightning-rainy',
-        gradient: ['#5614B0', '#DBD65C']
+        gradient: ['#5614B0', '#DBD65C'],
+        subtitle: '외부 활동을 삼가세요!'
     },
     Mist: {
         iconName: 'weather-fog',
-        gradient: ['#8e9eab','#eef2f3']
+        gradient: ['#8e9eab','#eef2f3'],
+        subtitle: '시야가 잘 보이지 않을 수 있습니다. 운전 조심하세요!'
+        
     },
     Haze: {
         iconName: 'weather-fog',
-        gradient: ['#8e9eab','#eef2f3']
+        gradient: ['#8e9eab','#eef2f3'],
+        subtitle: '시야가 잘 보이지 않을 수 있습니다. 운전 조심하세요!'
     },
     Fog: {
         iconName: 'weather-fog',
-        gradient: ['#8e9eab','#eef2f3']
+        gradient: ['#8e9eab','#eef2f3'],
+        subtitle: '시야가 잘 보이지 않을 수 있습니다. 운전 조심하세요!'
     }, 
     Drizzle: {
         iconName: 'weather-rainy',
-        gradient: ['#7F7FD5','#86A8E7','#91EAE4']
-
+        gradient: ['#7F7FD5','#86A8E7','#91EAE4'],
+        subtitle: '우산 잊지 마세요!'
     },
     Rain: {
         iconName: 'weather-pouring',
-        gradient: ['#7F7FD5','#86A8E7','#91EAE4']
+        gradient: ['#7F7FD5','#86A8E7','#91EAE4'],
+        subtitle: '우산 잊지 마세요!'
     },
     Snow : {
         iconName: 'weather-snowy',
-        gradient: ['#1c92d2','#f2fcfe']
+        gradient: ['#1c92d2','#f2fcfe'],
+        subtitle: '우산 잊지 마세요!'
     },
     Clear : {
         iconName: 'weather-sunny',
-        gradient: ['#FF4E50','#F9D423']
+        gradient: ['#FF4E50','#F9D423'],
+        subtitle: '햇빛이 눈부셔요~'
     }, 
     Clouds: {
         iconName: 'cloud',
-        gradient: ['#005AA7','#FFFDE4']
+        gradient: ['#283E51','#4B79A1'],
+        subtitle: '우중충하지만 오늘도 화이팅!'
+        
             },
     Smoke: {
         iconName: 'weather-fog',
-        gradient: ['#6D6027','#D3CBB8']
+        gradient: ['#6D6027','#D3CBB8'],
+        subtitle: '외부 활동을 삼가세요!'
     },
     Dust: {
         iconName: 'weather-fog',
-        gradient: ['#6D6027','#D3CBB8']
+        gradient: ['#6D6027','#D3CBB8'],
+        subtitle: '외부 활동을 삼가세요!'
     },     
     Sand: {
         iconName: 'weather-fog',
-        gradient: ['#6D6027','#D3CBB8']
+        gradient: ['#6D6027','#D3CBB8'],
+        subtitle: '외부 활동을 삼가세요!'
     }, 
     Ash: {
         iconName: 'weather-fog',
-        gradient: ['#606c88','#3f4c6b']
+        gradient: ['#606c88','#3f4c6b'],
+        subtitle: '외부 활동을 삼가세요!'
     },
     Squall: {
         iconName: 'weather-windy',
-        gradient: ['#808080','#3fada8']
+        gradient: ['#808080','#3fada8'],
+        subtitle: '바람이 굉장히 셉니다. 조심하세요!'
     }  
 }
 
@@ -76,8 +92,9 @@ export default function Weather({temp, condition}){
                 <Icons name={weatherOptions[condition].iconName} size={96} color='white' />
                 <Text style={styles.temp}>{temp}°</Text>
             </View>
-            <View style={styles.halfContainer}>
-                <Text>{condition}</Text>
+            <View style={{...styles.halfContainer, ...styles.textContainer}}>
+                <Text style={styles.title}>{condition}</Text>
+                <Text style={styles.subtitle}>{weatherOptions[condition].subtitle}</Text>
             </View>
         </LinearGradient>
     )
@@ -118,5 +135,19 @@ const styles = StyleSheet.create({
     temp: {
         fontSize: 42,
         color: 'white'
+    },
+    title: {
+        color: 'white',
+        fontSize: 45,
+        fontWeight: '300',
+        marginBottom: 10
+    },
+    subtitle: {
+        color: 'white',
+        fontSize: 22
+    },
+    textContainer: {
+        alignItems: 'flex-start',
+        paddingHorizontal: 30
     }
 });

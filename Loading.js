@@ -1,12 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View, StatusBar } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default function Loading() {
     return(  
-        <View style={styles.container}>   
+        <LinearGradient style={styles.container} colors={['#EDE574','#E1F5C4']}>   
             <StatusBar barStyle='light-content' />    
             <Text style={styles.text}>Getting the weather</Text>
-        </View>
+        </LinearGradient>
     )
 }
 
