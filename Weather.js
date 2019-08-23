@@ -93,7 +93,7 @@ export default function Weather({temp, condition}){
                 <Text style={styles.temp}>{temp}°</Text>
             </View>
             <View style={{...styles.halfContainer, ...styles.textContainer}}>
-                <Text style={styles.title}>{condition}</Text>
+                <Text style={styles.title}>Today is {condition}</Text>
                 <Text style={styles.subtitle}>{weatherOptions[condition].subtitle}</Text>
             </View>
         </LinearGradient>
@@ -138,13 +138,13 @@ const styles = StyleSheet.create({
     },
     title: {
         color: 'white',
-        fontSize: 45,
+        fontSize: 40,
         fontWeight: '300',
         marginBottom: 10
     },
     subtitle: {
         color: 'white',
-        fontSize: 22
+        fontSize: 25
     },
     textContainer: {
         alignItems: 'flex-start',

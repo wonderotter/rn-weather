@@ -4,7 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 
 export default function Loading() {
     return(  
-        <LinearGradient style={styles.container} colors={['#EDE574','#E1F5C4']}>   
+        <LinearGradient style={styles.container} colors={['#ffb347','#ffcc33']}>   
             <StatusBar barStyle='light-content' />    
             <Text style={styles.text}>Getting the weather</Text>
         </LinearGradient>
@@ -20,6 +20,6 @@ const styles = StyleSheet.create({
     },
     text: {
         color: '#444f59',
-        fontSize: 30
+        fontSize: 33
     }
 });
