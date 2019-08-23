@@ -1,14 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { black } from 'ansi-colors';
 
 export default function Loading() {
-    return(
-        <View style={styles.container}>
+    return(  
+        <View style={styles.container}>       
             <Text style={styles.text}>Getting the weather</Text>
         </View>
     )
-
 }
 
 const styles = StyleSheet.create({
@@ -16,8 +14,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'flex-end',
         paddingHorizontal: 30,
-        paddingVertical: 100,
-        backgroundColor: '#FDF6AA'
+        paddingVertical: 100
     },
     text: {
         color: '#444f59',
