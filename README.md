@@ -5,7 +5,8 @@ Weather App을 만들면서 React Native 배우기 & 정리
 
 ## ScreenShot
 
-![weather-app](https://user-images.githubusercontent.com/45552388/63621912-2e5baa80-c630-11e9-957c-a1ab5fe37a38.png)
+![weather-app](https://user-images.githubusercontent.com/45552388/63622033-8397bc00-c630-11e9-818a-750f53d13799.png)
+
 
 ***
 ## Introduction
